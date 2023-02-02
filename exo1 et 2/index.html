@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta HTTP-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <meta name="description" content="Webpage description goes here" />
+    <meta charset="utf-8">
+    <title>Change_me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="">
+    <script src="./calculette.js"></script>
+</head>
+
+<body>
+
+<p>Calculatrice JavaScript</p>
+<form id="calculatorForm" class="exo">
+    <input type="text" value="0">
+    <select  id="operator">
+        <option value="noOption">--Please choose an option--</option>
+        <option value="-">-</option>
+        <option value="+">+</option>
+        <option value="/">/</option>
+        <option value="x">x</option>
+    </select>
+    <input type="text" value="0">
+    <input type="button" onclick="calculer()" value="="/>
+    <p id="calculatorResult">0</p>
+</form>
+
+<p>Convertisseur temperatures</p>
+<form id="celciusForm" class="exo">
+    <input name="celcius" type="text" value="0">
+    <label for="celcius">°C</label>
+    <input type="button" onclick="calculerEnF()" value="=>"/>
+    <input type="button" onclick="calculerEnC()" value="<="/>
+    <input name="Fahrenheit" type="text" value="0">
+    <label for="Fahrenheit">°F</label>
+</form>
+
+<style>
+    .exo{
+        border: black 2px solid;
+    }
+</style>
+
+</body>
+</html>
